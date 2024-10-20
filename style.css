@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blanco-fondo-sombras: #FFFFFF;
+    --color-azul: #2F3645;
+    --color-azul-transparencia: #2f3645b3;
+    --color-azul-transparencia-2: #767a81de;
+    --color-sombra-gris: #808080;
+    --color-sombra-negra: #000000;
+}
+ 
+body {
+    font-family: "Raleway", system-ui;
+    background-color: var(--color-blanco-fondo-sombras);
+    font-size: 16px;
+    color: var(--color-azul);
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    height: 18.5vh;
+    position: fixed;
+    width: 100vw;
+    font-weight: 300;
+
+    font-size: 25px;
+    /*background-color: #FFFFFF;*/
+    
+
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-right: 20px;
+
+}
+a{
+    font-weight: bolder;
+    text-shadow: 
+        2px 2px var(--color-sombra-gris),
+        3px 3px 0px var(--color-sombra-negra);
+    color: var(--color-blanco-fondo-sombras);
+    text-decoration: none;
+}
+
+header{
+    background-image: url("./assets/imagenes/fondo.jpg") ;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.titulo-principal{      
+    text-shadow: 
+        2px 2px var(--color-sombra-gris),
+        5px 5px 0px var(--color-sombra-negra);
+    color: var(--color-blanco-fondo-sombras);
+    font-weight: 500;
+    font-size: 56px;
+    letter-spacing: 0.1em;
+       
+}
+h2{
+    margin: 100px 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    text-shadow: 
+        2px 2px var(--color-blanco-fondo-sombras),
+        2.5px 2.5px 0px var(--color-sombra-gris);
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0; 
+}
+
+.fotitos{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+} 
+.contenedor-foto{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+.boton-ver{
+    width: 300px;
+    height: 40px;
+    background-color: #2F3645;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+.desc-card{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
